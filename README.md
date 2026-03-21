@@ -80,3 +80,70 @@ Thesis project on OSINT-based dark web monitoring and LLM prompt injection secur
 
 ## Repository Structure (to be filled as work progresses)
 
+## Dataset Selection & Processing
+
+### Dataset Selection
+Il dataset utilizzato per questa analisi è stato selezionato seguendo i criteri proposti da HiddenLayer per la valutazione dei dataset di prompt injection. I criteri principali considerati sono stati:
+
+- presenza di esempi realistici di attacchi linguistici (jailbreak, prompt injection, manipolazioni semantiche)
+- distinzione chiara tra prompt benigni e malevoli
+- struttura semplice e facilmente preprocessabile
+- dimensione sufficiente per analisi statistiche e qualitative
+- riproducibilità del processo di analisi
+
+Il dataset originale, così come ottenuto dalla fonte, è disponibile nella cartella:
+data/raw/test.csv
+
+
+### Preprocessing Pipeline
+Il dataset grezzo presentava alcune criticità comuni nei dataset non standardizzati:
+
+- encoding non uniforme
+- separatori non dichiarati
+- colonne non etichettate
+- presenza di dati sensibili (nomi, email, numeri)
+- duplicati e valori mancanti
+
+Per affrontare questi problemi è stato sviluppato uno script di preprocessing dedicato (`src/preprocessing.py`) che esegue automaticamente:
+
+1. rilevamento del separatore (`;`, `,`, `\t`) e dell’encoding (`utf-8`, `utf-8-sig`, `cp1252`, `latin-1`)
+2. normalizzazione dei nomi delle colonne
+3. rimozione di duplicati e valori mancanti
+4. anonimizzazione di nomi propri, email e numeri sensibili
+5. salvataggio del dataset pulito e strutturato
+
+La versione preprocessata e anonimizzata del dataset è disponibile in:
+data/processed/test_anonymized.csv
+
+
+### Analysis Workflow
+L’analisi del dataset seguirà una pipeline strutturata in più fasi:
+
+1. **Caricamento del dataset preprocessato**  
+   Utilizzando gli script presenti in `src/`.
+
+2. **Esplorazione statistica**  
+   - distribuzione delle label  
+   - lunghezza media dei prompt  
+   - rilevamento di pattern ricorrenti  
+   - analisi dei duplicati  
+
+3. **Analisi linguistica**  
+   - identificazione di marker linguistici tipici dei jailbreak  
+   - classificazione delle tecniche di manipolazione  
+   - confronto con i pattern osservati nel dark web  
+
+4. **Correlazione con i contenuti del dark web**  
+   - confronto tra pattern linguistici  
+   - individuazione di similarità strutturali  
+   - analisi qualitativa delle room del marketplace  
+
+5. **Risultati e visualizzazioni**  
+   - grafici, statistiche e osservazioni finali  
+   - implicazioni per la sicurezza degli LLM  
+
+Gli script utilizzati per il caricamento, il preprocessing e l’analisi sono disponibili nella cartella:
+src/
+
+
+
