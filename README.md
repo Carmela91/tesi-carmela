@@ -1,41 +1,36 @@
 # tesi-carmela
-Thesis project on OSINT-based dark web monitoring and LLM prompt injection security.
-# OSINT‑Driven Threat Intelligence on Dark Web Marketplaces and Prompt Injection Attacks  
-### A Hybrid Analysis for Ethical Hacking and LLM Security
+LLMs for Dark Web OSINT: An Ethical and Methodological Framework to Support Threat Intelligence
 
 ##  Thesis Structure
 
 ### 1. Introduction
 - Motivation  
-- LLM security challenges  
-- Dark web as a cybercrime ecosystem  
-- Ethical hacking perspective  
-- Research questions  
-- Contributions  
-- Thesis structure  
+- Research Problem  
+- Thesis Statement  
+- Contributions
+- Structure of the Thesis   
 
 ### 2. Background
-- Large Language Models  
-- Prompt Injection & Jailbreak Attacks  
+- OSINT methodologies 
+- Dark Web and TOR Ecosystem
+- Large Language Models   
 - Dark Web Marketplaces  
-- Ethical Hacking & Legal Framework  
-- OSINT methodologies  
+- Ethical Hacking & Legal Considerations 
+  
 
 ### 3. Related Work
-- HiddenLayer evaluation of prompt injection datasets  
-- CRATOR: a Crawler for TOR (Springer)  
-- Academic research on dark web ecosystems  
-- Industrial threat intelligence reports  
+- Dark Web Intelligence Research  
+- TOR Crawling and CRATOR  
+- Threat Actor Communication Studies  
+- LLMs in Cybersecurity  
 - Research gaps  
 
 ### 4. Ethical Dark Web Monitoring Methodology
-- Ethical and legal constraints  
-- Passive monitoring approach  
-- Technical environment (Kali Linux, Tor Browser, VM isolation)  
-- OSINT‑based room identification  
-- Data extraction and documentation  
-- Operational security (OpSec)  
-- Alignment with ethical hacking standards  
+- Ethical and legal constraints   
+- Technical environment (Kali Linux, Tor Browser, VM isolation,OpSec)  
+- Passive Data Collection Strategy  
+- Room Identification and Documentation  
+- Experimental Methodology Oterview  
 
 ### 5. Dataset Selection and Processing
 - Selection criteria (from HiddenLayer)  
@@ -62,7 +57,7 @@ Thesis project on OSINT-based dark web monitoring and LLM prompt injection secur
 ### 8. Experimental Analysis
 - Quantitative analysis of the dataset  
 - Qualitative analysis of attack patterns  
-- Correlation: dark web patterns vs LLM attack patterns  
+- Correlation: dark web linguistic patterns vs LLM risk‑related patterns  
 - Threat intelligence interpretation  
 - Discussion  
 
