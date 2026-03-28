@@ -1,77 +1,77 @@
 # tesi-carmela
+### Title 
 LLMs for Dark Web OSINT: An Ethical and Methodological Framework to Support Threat Intelligence
 
 ##  Thesis Structure
-
-### 1. Introduction
+ 
+### 1.Introdution
 - Motivation  
 - Research Problem  
 - Thesis Statement  
-- Contributions
-- Structure of the Thesis   
+- Contributions  
+- Structure of the Thesis  
 
 ### 2. Background
-- OSINT methodologies 
-- Dark Web and TOR Ecosystem
-- Large Language Models   
+- OSINT Methodologies  
+- Dark Web and TOR Ecosystem  
+- Large Language Models  
 - Dark Web Marketplaces  
-- Ethical Hacking & Legal Considerations 
-  
+- Ethical Hacking and Legal Considerations  
 
 ### 3. Related Work
 - Dark Web Intelligence Research  
 - TOR Crawling and CRATOR  
 - Threat Actor Communication Studies  
 - LLMs in Cybersecurity  
-- Research gaps  
+- Research Gaps  
 
 ### 4. Ethical Dark Web Monitoring Methodology
-- Ethical and legal constraints   
-- Technical environment (Kali Linux, Tor Browser, VM isolation,OpSec)  
+- Ethical and Legal Constraints  
+- Technical Environment (Kali Linux, Tor Browser, VM Isolation, OpSec)  
 - Passive Data Collection Strategy  
 - Room Identification and Documentation  
-- Experimental Methodology Oterview  
+- Experimental Methodology Overview  
 
 ### 5. Dataset Selection and Processing
-- Selection criteria (from HiddenLayer)  
-- Chosen dataset: Qualifire Prompt Injection Benchmark  
-- Dataset structure and labeling  
-- Preprocessing pipeline  
+- Selection Criteria (HiddenLayer guidelines)  
+- Chosen Dataset: Qualifire Prompt Injection Benchmark  
+- Dataset Structure and Labeling  
+- Preprocessing Pipeline  
 - Limitations  
 
 ### 6. Dark Web Marketplace Analysis
-- Marketplace selected: Cocorico Market (CRATOR)  
-- Marketplace structure  
-- Identified rooms (categories, vendor pages, product pages)  
-- HTML structural analysis (non‑sensitive)  
-- Threat actor behavior patterns  
-- Comparison with OSINT reports  
+- Selected Marketplace: Cocorico Market (via CRATOR)  
+- Marketplace Structure  
+- Identified Rooms (categories, vendor pages, product pages)  
+- Non‑sensitive HTML Structural Analysis  
+- Threat Actor Behavioral Patterns  
+- Comparison with OSINT Reports  
 
 ### 7. Dark Web Room Database
-- Database schema  
-- Fields and metadata  
-- Room entries (20–30 documented rooms)  
-- Category classification  
-- Insights  
+- Database Schema  
+- Fields and Metadata  
+- Documented Room Entries (20–30 rooms)  
+- Category Classification  
+- Insights and Observations  
 
 ### 8. Experimental Analysis
-- Quantitative analysis of the dataset  
-- Qualitative analysis of attack patterns  
-- Correlation: dark web linguistic patterns vs LLM risk‑related patterns  
-- Threat intelligence interpretation  
-- Discussion  
+- Quantitative Analysis of the Dataset  
+- Qualitative Analysis of Attack Patterns  
+- Correlation: Dark Web Linguistic Patterns vs. LLM Risk‑Related Patterns  
+- Threat Intelligence Interpretation  
+- Integrated Discussion of Findings  
 
-### 9. Discussion
-- Ethical implications  
-- Strengths and limitations  
-- Real‑world relevance  
-- Implications for enterprise LLM security  
+### 9. Ethical and Practical Implications
+- Ethical Implications  
+- Strengths and Limitations  
+- Real‑World Relevance  
+- Implications for Enterprise LLM Security  
 
 ### 10. Conclusion and Future Work
-- Summary  
+- Summary of Findings  
 - Contributions  
-- Future research  
-- Professional applications  
+- Future Research Directions  
+- Professional Applications
 
 ## Repository Structure (to be filled as work progresses)
 
