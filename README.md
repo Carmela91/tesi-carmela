@@ -139,6 +139,7 @@ L’analisi del dataset seguirà una pipeline strutturata in più fasi:
 
 Gli script utilizzati per il caricamento, il preprocessing e l’analisi sono disponibili nella cartella:
 src/
-
+### Abstarct 
+Questa tesi esplora l’utilizzo etico dei Large Language Models (LLM) come supporto alle attività di OSINT sul dark web, con particolare attenzione ai marketplace illegali e ai pattern linguistici utilizzati dai threat actor. Il lavoro propone una metodologia di monitoraggio etico basata su raccolta dati passiva, ambiente isolato e rigorose misure di sicurezza operativa. I dati estratti da un marketplace del dark web vengono analizzati e confrontati con il dataset Qualifire Prompt Injection Benchmark, al fine di individuare similarità linguistiche, ricorrenze semantiche e potenziali indicatori utili alla threat intelligence. L’analisi combina tecniche quantitative e qualitative, integrando l’uso di LLM per classificazione, sintesi e rilevamento di pattern. I risultati mostrano che gli LLM possono supportare in modo efficace e controllato l’analisi OSINT del dark web, pur richiedendo attenzione ai limiti etici, ai bias e alla necessità di supervisione umana. Il lavoro contribuisce a definire un quadro metodologico replicabile per l’impiego responsabile degli LLM nella dark web intelligence.
 
 
