@@ -32,12 +32,9 @@ LLMs for Dark Web OSINT: An Ethical and Methodological Framework to Support Thre
 - Room Identification and Documentation  
 - Experimental Methodology Overview  
 
+da effettuare modifiche prof
 ### 5. Dataset Selection and Processing
-- Selection Criteria (HiddenLayer guidelines)  
-- Chosen Dataset: Qualifire Prompt Injection Benchmark  
-- Dataset Structure and Labeling  
-- Preprocessing Pipeline  
-- Limitations  
+-
 
 ### 6. Dark Web Marketplace Analysis
 - Selected Marketplace: Cocorico Market (via CRATOR)  
@@ -73,44 +70,6 @@ LLMs for Dark Web OSINT: An Ethical and Methodological Framework to Support Thre
 - Future Research Directions  
 - Professional Applications
 
-## Repository Structure (to be filled as work progresses)
-
-## Dataset Selection & Processing
-
-### Dataset Selection
-Il dataset utilizzato per questa analisi è stato selezionato seguendo i criteri proposti da HiddenLayer per la valutazione dei dataset di prompt injection. I criteri principali considerati sono stati:
-
-- presenza di esempi realistici di attacchi linguistici (jailbreak, prompt injection, manipolazioni semantiche)
-- distinzione chiara tra prompt benigni e malevoli
-- struttura semplice e facilmente preprocessabile
-- dimensione sufficiente per analisi statistiche e qualitative
-- riproducibilità del processo di analisi
-
-Il dataset originale, così come ottenuto dalla fonte, è disponibile nella cartella:
-data/raw/test.csv
-
-
-### Preprocessing Pipeline
-Il dataset grezzo presentava alcune criticità comuni nei dataset non standardizzati:
-
-- encoding non uniforme
-- separatori non dichiarati
-- colonne non etichettate
-- presenza di dati sensibili (nomi, email, numeri)
-- duplicati e valori mancanti
-
-Per affrontare questi problemi è stato sviluppato uno script di preprocessing dedicato (`src/preprocessing.py`) che esegue automaticamente:
-
-1. rilevamento del separatore (`;`, `,`, `\t`) e dell’encoding (`utf-8`, `utf-8-sig`, `cp1252`, `latin-1`)
-2. normalizzazione dei nomi delle colonne
-3. rimozione di duplicati e valori mancanti
-4. anonimizzazione di nomi propri, email e numeri sensibili
-5. salvataggio del dataset pulito e strutturato
-
-La versione preprocessata e anonimizzata del dataset è disponibile in:
-data/processed/test_anonymized.csv
-
-
 ### Analysis Workflow
 L’analisi del dataset seguirà una pipeline strutturata in più fasi:
 
@@ -137,9 +96,12 @@ L’analisi del dataset seguirà una pipeline strutturata in più fasi:
    - grafici, statistiche e osservazioni finali  
    - implicazioni per la sicurezza degli LLM  
 
-Gli script utilizzati per il caricamento, il preprocessing e l’analisi sono disponibili nella cartella:
-src/
-### Abstarct 
-Questa tesi esplora l’utilizzo etico dei Large Language Models (LLM) come supporto alle attività di OSINT sul dark web, con particolare attenzione ai marketplace illegali e ai pattern linguistici utilizzati dai threat actor. Il lavoro propone una metodologia di monitoraggio etico basata su raccolta dati passiva, ambiente isolato e rigorose misure di sicurezza operativa. I dati estratti da un marketplace del dark web vengono analizzati e confrontati con il dataset Qualifire Prompt Injection Benchmark, al fine di individuare similarità linguistiche, ricorrenze semantiche e potenziali indicatori utili alla threat intelligence. L’analisi combina tecniche quantitative e qualitative, integrando l’uso di LLM per classificazione, sintesi e rilevamento di pattern. I risultati mostrano che gli LLM possono supportare in modo efficace e controllato l’analisi OSINT del dark web, pur richiedendo attenzione ai limiti etici, ai bias e alla necessità di supervisione umana. Il lavoro contribuisce a definire un quadro metodologico replicabile per l’impiego responsabile degli LLM nella dark web intelligence.
 
+### Abstract
+
+Questa tesi esplora l’impiego etico dei Large Language Models (LLM) come strumenti di supporto nell’analisi strutturale e linguistica dei marketplace del dark web. Il lavoro si basa su una metodologia di raccolta dati passiva, condotta in ambiente isolato e nel rispetto di rigorose misure di sicurezza operativa. La fase di acquisizione utilizza CRATOR, un crawler accademico progettato per l’analisi etica dei marketplace del dark web, che consente di estrarre esclusivamente la struttura HTML e i metadati non sensibili delle room.
+
+I dati raccolti vengono organizzati in un dataset strutturale e linguistico costruito appositamente per questa ricerca e memorizzato in un database MySQL. L’analisi si fonda sull’impiego degli LLM come valutatori semantici, seguendo i principi delineati nella letteratura recente sul paradigma “LLM-as-a-Judge”. I modelli vengono utilizzati per classificare le room, identificare ricorrenze linguistiche, sintetizzare pattern descrittivi e supportare l’interpretazione qualitativa delle dinamiche interne dei marketplace.
+
+I risultati mostrano che gli LLM possono contribuire in modo efficace e controllato all’analisi OSINT del dark web, pur richiedendo attenzione ai limiti metodologici, alla variabilità dei modelli e alla necessità di supervisione umana. Il lavoro propone infine un quadro metodologico replicabile per l’impiego responsabile degli LLM nell’analisi strutturale e linguistica dei marketplace del dark web.
 
