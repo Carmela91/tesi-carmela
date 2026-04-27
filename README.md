@@ -4,67 +4,74 @@ LLMs for Dark Web OSINT: An Ethical and Methodological Framework to Support Thre
 
 ##  Thesis Structure
  
-### 1.Introdution
+### .Introdution
 - Motivation  
 - Research Problem  
 - Thesis Statement  
 - Contributions  
 - Structure of the Thesis  
 
-### 2. Background
+### 1. Background
 - OSINT Methodologies  
 - Dark Web and TOR Ecosystem  
 - Large Language Models  
 - Dark Web Marketplaces  
 - Ethical Hacking and Legal Considerations  
 
-### 3. Related Work
+### 2. Related Work
 - Dark Web Intelligence Research  
 - TOR Crawling and CRATOR  
 - Threat Actor Communication Studies  
 - LLMs in Cybersecurity  
 - Research Gaps  
 
-### 4. Ethical Dark Web Monitoring Methodology
+### 3. Ethical Dark Web Monitoring Methodology
 - Ethical and Legal Constraints  
 - Technical Environment (Kali Linux, Tor Browser, VM Isolation, OpSec)  
 - Passive Data Collection Strategy  
 - Room Identification and Documentation  
 - Experimental Methodology Overview  
 
-da effettuare modifiche prof
-### 5. Dataset Selection and Processing
--
+### 4.Dataset Selection and Processing
+4.1 Source Dataset: CRATOR Structural Extraction  
+4.2 Dataset Scope and Rationale  
+4.3 Dataset Organization  
+4.4 Selection of the 100-Room Experimental Subset  
+4.5 Preprocessing for Rule-Based Analysis  
+4.6 Preprocessing for LLM-Based Evaluation  
+4.7 Dataset Integrity and Reproducibility
 
-### 6. Dark Web Marketplace Analysis
-- Selected Marketplace: Cocorico Market (via CRATOR)  
-- Marketplace Structure  
-- Identified Rooms (categories, vendor pages, product pages)  
-- Non‑sensitive HTML Structural Analysis  
-- Threat Actor Behavioral Patterns  
-- Comparison with OSINT Reports  
-
-### 7. Dark Web Room Database
+### 5. Dark Web Marketplace Analysis
+-5.1 Overview of the Eight-Target Dataset  
+5.2 Initial Raw Dataset (16,000 Files)  
+5.3 Normalization and Filtering (7,241 Files)  
+5.4 Construction of the 1,500-File Subset  
+5.5 Marketplace and Forum Structures  
+5.6 Non‑Sensitive Structural Patterns  
+5.7 Behavioral Patterns (Structural Only)  
+5.8 Alignment with OSINT Reports
+  
+### 6. Dark Web Room Database
 - Database Schema  
 - Fields and Metadata  
 - Documented Room Entries (20–30 rooms)  
 - Category Classification  
 - Insights and Observations  
 
-### 8. Experimental Analysis
+### 7. Experimental Analysis
 - Quantitative Analysis of the Dataset  
 - Qualitative Analysis of Attack Patterns  
 - Correlation: Dark Web Linguistic Patterns vs. LLM Risk‑Related Patterns  
 - Threat Intelligence Interpretation  
 - Integrated Discussion of Findings  
 
-### 9. Ethical and Practical Implications
+### 8. Ethical and Practical Implications
 - Ethical Implications  
 - Strengths and Limitations  
 - Real‑World Relevance  
 - Implications for Enterprise LLM Security  
 
-### 10. Conclusion and Future Work
+### 9. Conclusion and Future Work
 - Summary of Findings  
 - Contributions  
 - Future Research Directions  
